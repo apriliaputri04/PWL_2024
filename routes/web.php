@@ -80,3 +80,5 @@ Route::get('/greeting', function () {
 Route::get('/greeting', function () { 
     return view('blog.hello', ['name' => 'Aprilia Putri Anggraeni']); 
 });
+
+Route::get('/greeting', [WelcomeController::class,'greeting']);
